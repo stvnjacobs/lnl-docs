@@ -129,10 +129,19 @@ $ hugo server
 
 ---
 
-## Project Layout
-
-
 ## Submitting a Fix
+
+---
+
+### Small Fixes and Typos
+
+![Docs Header Edit Link](http://static.stj.io/img/lnl-docs-edit-link.png)
+
+---
+
+
+
+---
 
 ## Creating a New Post
 
