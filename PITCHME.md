@@ -3,7 +3,16 @@
 # Linode Docs
 ## Contributing Fixes and New Documentation
 
-[https://linode.com/docs](https://linode.com/docs/)
+https://linode.com/docs/
+
+---
+
+The Linode Docs currently total 1011 at the time of writing.
+
+```
+$ find . -type f -name '*.md' | grep -v '_index.md' | wc -l
+1011
+```
 
 ---
 
@@ -19,24 +28,15 @@ $ brew install hugo
 
 ## Maintaining your own version
 
-1. Fork the repository
-2. Clone your forked repository
-```sh
-$ git clone git@github.com/$user/docs.git
-```
+### Step 1
 
----
+#### Fork the repository
 
-## Start the Local Development Environment
++++
 
-```
-$ cd docs
-$ hugo server
-```
+### Step 2
 
----
-
-## Project Layout
+#### Clone your forked repository
 
 ```
 $ git clone git@github.com:stvnjacobs/docs.git
@@ -48,16 +48,33 @@ Receiving objects: 100% (43115/43115), 293.67 MiB | 8.74 MiB/s, done.
 Resolving deltas: 100% (29522/29522), done.
 Checking out files: 100% (3355/3355), done.
 ```
+
++++
+
+### Step 3
+
+#### Add the Linode Docs repo as a remote repository
+
+This will allow you to pull in changes made to the main repository.
+
 ```
 $ cd docs/
 $ git remote add upstream git@github.com:Linode/docs.git
+```
+
+You can confirm this with the following:
+
+```
 $ git remote -v
 origin	git@github.com:stvnjacobs/docs.git (fetch)
 origin	git@github.com:stvnjacobs/docs.git (push)
 upstream	git@github.com:Linode/docs.git (fetch)
 upstream	git@github.com:Linode/docs.git (push)
+
 $ git pull upstream master
 ```
+
++++
 
 ```
 $ git branch
@@ -79,7 +96,10 @@ $ git branch -a
   remotes/upstream/nginx-basic-graphic
 ```
 
+---
+
 ## Project Layout
+
 ```
 ~/.../Linode/docs $ exa -TFraL1
 ./
@@ -98,6 +118,20 @@ $ git branch -a
 ├── .gitignore
 └── .git/
 ```
+
+---
+
+## Start the Local Development Environment
+
+```
+$ cd docs
+$ hugo server
+```
+
+---
+
+## Project Layout
+
 
 ## Submitting a Fix
 
