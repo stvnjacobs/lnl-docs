@@ -14,17 +14,8 @@ $ find . -type f -name '*.md' | grep -v '_index.md' | wc -l
 1011
 ```
 
+
 ---
-
-## Installing Dependencies
-
-```
-$ brew install hugo
-```
-
-[Installation docs](https://gohugo.io/getting-started/installing)
-
-+++
 
 ## Maintaining your own version
 
@@ -120,6 +111,14 @@ $ git branch -a
 ```
 
 ---
+
+## Installing Dependencies
+
+```
+$ brew install hugo
+```
+
+[Installation docs](https://gohugo.io/getting-started/installing)
 
 ## Start the Local Development Environment
 
