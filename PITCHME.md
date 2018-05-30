@@ -9,7 +9,7 @@ https://linode.com/docs/
 
 The Linode Docs currently total 1011 at the time of writing.
 
-```
+```txt
 $ find . -type f -name '*.md' | grep -v '_index.md' | wc -l
 1011
 ```
@@ -29,7 +29,7 @@ $ find . -type f -name '*.md' | grep -v '_index.md' | wc -l
 
 #### Clone your forked repository
 
-```
+```txt
 $ git clone git@github.com:stvnjacobs/docs.git
 Cloning into 'docs'...
 remote: Counting objects: 43115, done.
@@ -48,14 +48,14 @@ Checking out files: 100% (3355/3355), done.
 
 This will allow you to pull in changes made to the main repository.
 
-```
+```txt
 $ cd docs/
 $ git remote add upstream git@github.com:Linode/docs.git
 ```
 
 You can confirm this with the following:
 
-```
+```txt
 $ git remote -v
 origin	git@github.com:stvnjacobs/docs.git (fetch)
 origin	git@github.com:stvnjacobs/docs.git (push)
@@ -67,7 +67,7 @@ $ git pull upstream master
 
 +++
 
-```
+```txt
 $ git branch
 * master
 
@@ -91,7 +91,7 @@ $ git branch -a
 
 ## Project Layout
 
-```
+```txt
 ~/.../Linode/docs $ exa -TFraL1
 ./
 ├── themes/
@@ -114,7 +114,7 @@ $ git branch -a
 
 ## Installing Dependencies
 
-```
+```txt
 $ brew install hugo
 ```
 
@@ -122,7 +122,7 @@ $ brew install hugo
 
 ## Start the Local Development Environment
 
-```
+```txt
 $ cd docs
 $ hugo server
 ```
@@ -136,7 +136,7 @@ $ hugo server
 
 ## Creating a New Post
 
-```
+```txt
 $ exa -TFraL1 archetypes/
 archetypes/
 ├── default.md
