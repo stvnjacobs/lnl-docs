@@ -42,6 +42,8 @@ Resolving deltas: 100% (29522/29522), done.
 Checking out files: 100% (3355/3355), done.
 ```
 
+@[1]
+
 +++
 
 ### Step 3
