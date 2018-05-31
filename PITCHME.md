@@ -7,13 +7,7 @@ https://linode.com/docs/
 
 ---
 
-The Linode Docs currently total 1011 at the time of writing.
-
-```txt
-$ find . -type f -name '*.md' | grep -v '_index.md' | wc -l
-1011
-```
-
+The Linode Docs currently total *1011* at the time of writing.
 
 ---
 
@@ -114,7 +108,8 @@ $ git branch -a
 
 ### docs/
 
-This directory contains all the content files that are used to compose our documentation.
+- Contains all the content files used to compose our documentation.
+
 If you are creating a new doc, or editing an existing one, this is where you will be working from.
 
 +++
@@ -167,7 +162,6 @@ $ hugo server
 ## Creating a New Post
 
 ```txt
-$ exa -TFraL1 archetypes/
 archetypes/
 ├── default.md
 └── content.md
