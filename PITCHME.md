@@ -50,6 +50,7 @@ This will allow you to pull in changes made to the main repository.
 
 ```txt
 $ cd docs/
+
 $ git remote add upstream git@github.com:Linode/docs.git
 ```
 
@@ -92,7 +93,6 @@ $ git branch -a
 ## Project Layout
 
 ```txt
-~/.../Linode/docs $ exa -TFraL1
 ./
 ├── themes/
 ├── README.md
@@ -109,6 +109,31 @@ $ git branch -a
 ├── .gitignore
 └── .git/
 ```
+
++++
+
+### docs/
+
+This directory contains all the content files that are used to compose our documentation.
+If you are creating a new doc, or editing an existing one, this is where you will be working from.
+
++++
+
+### archetypes/
+
+Hugo has what they call archetypes.
+
+
++++
+
+### ci/
+
+The Linode Docs have a test suite that is run as part of a continuous integration pipeleine.
+It test for thing such as:
+- Presence of required metadata
+- File naming and formatting conventions
+- Ensuring there are no broken links
+- Ensuring there all linked images are present
 
 ---
 
