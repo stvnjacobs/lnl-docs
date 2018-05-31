@@ -92,6 +92,14 @@ $ git branch -a
   remotes/upstream/nginx-basic-graphic
 ```
 
+@[1]
+@[2]
+@[4]
+@[6]
+@[7]
+@[8-11]
+@[12-17]
+
 ---
 
 ## Project Layout
