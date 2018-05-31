@@ -139,10 +139,6 @@ $ hugo server
 
 ---
 
-
-
----
-
 ## Creating a New Post
 
 ```txt
