@@ -7,7 +7,13 @@ https://linode.com/docs/
 
 ---
 
-The Linode Docs currently total *1011* at the time of writing.
+The Linode Docs currently have a total of **1011** articles at the time of me writing this.
+
+The topics covered include:
+- The Linode platform
+- Software targeted at Linux servers
+- Deployment tools
+- and more!
 
 ---
 
@@ -16,6 +22,8 @@ The Linode Docs currently total *1011* at the time of writing.
 ### Step 1
 
 #### Fork the repository
+
+![Github Fork Button](http://static.stj.io/img/lnl-docs-fork.png)
 
 +++
 
