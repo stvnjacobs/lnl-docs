@@ -275,7 +275,7 @@ Not pictured
 
 ### Body
 
-Hugo, and therefore the Linode Docs, are rendered from Markdown.
+Hugo, and therefore the Linode Docs, render pages from Markdown.
 
 - https://daringfireball.net/projects/markdown/
 - https://daringfireball.net/projects/markdown/syntax
