@@ -29,7 +29,7 @@ _from easiest to hardest_
 
 - Correct typos and silly mistakes
 - Update existing docs with better alternatives
-- Write a doc yourself!
+- Write a doc
 
 ---
 
