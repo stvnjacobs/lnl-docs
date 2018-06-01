@@ -238,9 +238,13 @@ A post is laid out into two main parts.
 Note:
 Create a post
 
++++
+
+### Shortcodes
+
 ---
 
-### ci/
+## ci/
 
 The Linode Docs have a test suite that is run as part of a continuous integration pipeleine.
 It test for thing such as:
