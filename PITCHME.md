@@ -99,7 +99,7 @@ By adding a "remote", we are letting git know that there is another copy of the 
 
 We can pull in any changes that are made this repository.
 
-Upstreap is only a convention.
+`upstream` is only a convention.
 
 +++
 
