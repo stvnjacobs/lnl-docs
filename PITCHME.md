@@ -390,7 +390,7 @@ It test for thing such as:
 - Presence of required metadata
 - File naming and formatting conventions
 - Ensuring there are no broken links
-- Ensuring there all linked images are present
+- Ensuring that all linked images are present
 
 +++
 
