@@ -25,8 +25,6 @@ and more
 
 ## Ways to contribute
 
-_from easiest to hardest_
-
 - Correct typos and silly mistakes
 - Update existing docs with better alternatives
 - Write a doc
@@ -37,7 +35,11 @@ _from easiest to hardest_
 
 - The Linode Docs are incredibly easy to get up and running yourself
 
-_Warning: There is going to be some git._
+![Git Logo](http://static.stj.io/img/lnl-docs-git-logo.png)
+![Hugo Logo](http://static.stj.io/img/lnl-docs-hugo-logo.svg)
+
+Note:
+Here comes the git.
 
 +++
 
