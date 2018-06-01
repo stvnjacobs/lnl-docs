@@ -33,7 +33,7 @@ and more
 
 ## Getting everything in order
 
-- The Linode Docs are incredibly easy to get up and running yourself
+- The Linode Docs are incredibly easy to get up and running yourself.
 
 ![Hugo and Git Logos](http://static.stj.io/img/lnl-docs-hugo-git-logo.png)
 
