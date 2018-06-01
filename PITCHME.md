@@ -253,6 +253,7 @@ It test for thing such as:
 - Ensuring there are no broken links
 - Ensuring there all linked images are present
 
++++
 
 ```txt
 $ git branch
