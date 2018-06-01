@@ -139,6 +139,10 @@ the `git pull upstream master` should return `Already up to date.`
 └── .git/
 ```
 
+@[5,7]
+@[10]
+@[11]
+
 +++
 
 ### docs/
@@ -149,6 +153,9 @@ If you are creating a new doc, or editing an existing one, this is where you wil
 
 Note:
 Open the GitHub link and show the docs folder
+
+We are jumping to archetypes, and skipping CI.
+We have to write a post first.
 
 +++
 
@@ -167,6 +174,10 @@ A post is laid out into two main parts.
 
 - Front matter (meta infomration)
 - Content
+
+
+Note:
+Create a post
 
 ---
 
