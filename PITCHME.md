@@ -165,9 +165,9 @@ Open the GitHub link and show the docs folder
 
 https://github.com/linode/docs/tree/master/docs
 
-https://github.com/linode/docs/blob/master/docs/applications/big-data/big-data-in-the-linode-cloud-streaming-data-processing-with-apache-storm.md
+https://github.com/linode/docs/blob/master/docs/getting-started.md
 
-https://linode.com/docs/applications/big-data/big-data-in-the-linode-cloud-streaming-data-processing-with-apache-storm/
+https://linode.com/docs/getting-started/
 
 We are jumping to archetypes, and skipping CI.
 We have to write a post first.
@@ -203,31 +203,28 @@ https://github.com/linode/docs/tree/master/archetypes
 
 ```yaml
 author:
-    name: Karthik Shiraly
-    email: docs@linode.com
-description: 'Deploy Storm cluster on Linode cloud for real-time analytics on streaming datasets.'
-keywords: ["storm", "analytics", "big data", "zookeeper"]
-license: '[CC BY-ND 4.0](http://creativecommons.org/licenses/by-nd/4.0/)'
-published: 2016-10-25
-modified: 2017-06-21
+  name: Linode
+  email: docs@linode.com
+keywords: ["getting started", "intro", "basics", "first steps"]
+description: 'This guide will help you set up your first Linode.'
+og_description: "Learn how to create an account, boot your first Linode, and connect via SSH with our Getting Started guide."
+license: '[CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0)'
+modified: 2018-05-23
 modified_by:
-    name: Phil Zona
-title: 'Big Data in the Linode Cloud: Streaming Data Processing with Apache Storm'
-contributor:
-    name: Karthik Shiraly
-    link: https://github.com/pathbreak
-external_resources:
-- '[Apache Storm project website](http://storm.apache.org/)'
-- '[Apache Storm documentation](https://storm.apache.org/releases/current/index.html)'
-- '[Storm - Distributed and Fault-Tolerant Real-time Computation](http://www.infoq.com/presentations/Storm-Introduction)'
-image: https://www.linode.com/docs/assets/big_data_linode_cloud.png
+  name: Linode
+published: 2009-07-19
+title: Getting Started with Linode
+show_on_frontpage: true
+title_short: "Getting Started"
+weight: 10
+icon: "book"
+show_on_rss_feed: false
 ```
 
 https://raw.githubusercontent.com/linode/docs/master/docs/applications/big-data/big-data-in-the-linode-cloud-streaming-data-processing-with-apache-storm.md
 
 @[1-3](Author data)
 @[4](A short description)
-@[1-19]
 
 Note:
 Not pictured
@@ -294,18 +291,39 @@ $ hugo server
 
 ## Submitting a Fix
 
----
+There are many reasons to fix a guide:
+- It has gone out of date
+- There is some sort of inaccuracy
+- There is a better way to do something
+
++++
 
 ### Small Fixes and Typos
 
 ![Docs Header Edit Link](http://static.stj.io/img/lnl-docs-edit-link.png)
+
++++
+
+### Larger changes
+
+For larger changes, it is best to open an issue on the GitHub project.
+
+You can still make the changes, but it is best to reach a concensus with the Docs team before putting in the effort to rewrite a large portion of a doc.
+
+https://github.com/linode/docs/issues
 
 ---
 
 ## Creating a New Post
 
 ```txt
+hugo new --kind content path/to/a-great-new-guide.md
+```
+
+```txt
 archetypes/
 ├── default.md
 └── content.md
 ```
+
+https://github.com/linode/docs/blob/master/CONTRIBUTING.md#create-a-new-guide
