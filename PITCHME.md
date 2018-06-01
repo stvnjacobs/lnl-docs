@@ -216,6 +216,8 @@ external_resources:
 image: https://www.linode.com/docs/assets/big_data_linode_cloud.png
 ```
 
+https://raw.githubusercontent.com/linode/docs/master/docs/applications/big-data/big-data-in-the-linode-cloud-streaming-data-processing-with-apache-storm.md
+
 @[1-3](Author data)
 @[4](A short description)
 @[1-19]
