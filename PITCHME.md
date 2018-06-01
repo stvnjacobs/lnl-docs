@@ -180,6 +180,12 @@ Hugo has what they call archetypes.
 
 They are pre-formatted "templates" for various kinds of posts.
 
+```txt
+archetypes/
+├── default.md
+└── content.md
+```
+
 Note:
 We only write docs, so there isn't much variation, here.
 
@@ -226,23 +232,6 @@ https://raw.githubusercontent.com/linode/docs/master/docs/applications/big-data/
 Note:
 Not pictured
 - Front matter is seperated by `---`
----
-
-## Post Layout
-
-A post is laid out into two main parts.
-
-- Front matter (meta infomration)
-- Content
-
-
-Note:
-Create a post
-
-+++
-
-### Shortcodes
-
 ---
 
 ## ci/
