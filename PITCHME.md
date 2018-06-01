@@ -293,7 +293,9 @@ One example, used throughout our documentation, are Shortcodes.
 - https://gohugo.io/content-management/shortcodes/#example-highlight-input
 - https://github.com/linode/docs/tree/master/themes/docsmith/layouts/shortcodes
 
-Examples:
++++
+
+#### Shortcode Examples
 
 - https://github.com/linode/docs/blob/master/themes/docsmith/layouts/shortcodes/output.html
 - https://github.com/linode/docs/blob/master/themes/docsmith/layouts/shortcodes/note.html
@@ -344,11 +346,30 @@ You can still make the changes, but it is best to reach a consensus with the Doc
 
 https://github.com/linode/docs/issues
 
++++
+
+### Making a branch for changes
+
+It is best practice to make changes on a new branch.
+
+This is more for your own good, as it allows you to keep your master in sync with upstream, while you work on one or more of your own branches.
+
+```txt
+$ git checkout -b fix/remove-debian7
+
+# fix fix fix
+
+$ git push origin fix/remove-debian7
+```
+
 ---
 
 ## Creating a New Post
 
 ```txt
+$ git checkout master
+$ git checkout -b doc/troubleshooting-ssh
+
 $ hugo new --kind content troubleshooting/troubleshooting-failing-ssh-connections/index.md
 ```
 
@@ -413,3 +434,7 @@ $ ./ci/scripts/blueberry.sh
 $ ./ci/scripts/docs404.sh
 $ ./ci/scripts/vale.sh
 ```
+
+---
+
+# Thanks!
