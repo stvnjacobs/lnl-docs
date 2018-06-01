@@ -36,7 +36,7 @@ and more
 - The Linode Docs are incredibly easy to get up and running yourself
 
 ![Git Logo](http://static.stj.io/img/lnl-docs-git-logo.png)
-![Hugo Logo](http://static.stj.io/img/lnl-docs-hugo-logo.svg)
+![Hugo Logo](http://static.stj.io/img/lnl-docs-hugo-logo.png)
 
 Note:
 Here comes the git.
