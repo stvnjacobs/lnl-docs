@@ -80,6 +80,9 @@ $ cd docs/
 $ git remote add upstream git@github.com:Linode/docs.git
 ```
 
+@[1]
+@[3]
+
 Note:
 Git is set up to be a distributed system.
 
@@ -112,6 +115,10 @@ upstream	git@github.com:Linode/docs.git (push)
 
 $ git pull upstream master
 ```
+
+@[1] List linked remote repositories.
+@[2-5]
+@[6] `Already up to date.`
 
 Note:
 Unless someone made a change in the last few minutes, since you configured the remote,
