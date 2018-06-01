@@ -72,7 +72,6 @@ Checking out files: 100% (3355/3355), done.
 
 #### Add the Linode Docs repo as a remote repository
 
-This will allow you to pull in changes made to the main repository.
 
 ```txt
 $ cd docs/
@@ -82,6 +81,8 @@ $ git remote add upstream git@github.com:Linode/docs.git
 
 @[1]
 @[3]
+
+This will allow you to pull in changes made to the main repository.
 
 Note:
 Git is set up to be a distributed system.
