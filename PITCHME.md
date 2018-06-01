@@ -117,9 +117,9 @@ upstream	git@github.com:Linode/docs.git (push)
 $ git pull upstream master
 ```
 
-@[1] List linked remote repositories.
+@[1](List linked remote repositories.)
 @[2-5]
-@[7] `Already up to date.`
+@[7](`Already up to date.`)
 
 Note:
 Unless someone made a change in the last few minutes, since you configured the remote,
