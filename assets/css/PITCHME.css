@@ -21,6 +21,9 @@ h6,
   text-transform: none;
 }
 
+.reveal ul {
+  padding: 0 40px;
+}
 #gp-logo img {
   max-height: 100px;
 }
