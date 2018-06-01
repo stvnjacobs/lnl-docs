@@ -35,7 +35,7 @@ and more
 
 - The Linode Docs are incredibly easy to get up and running yourself
 
-![Hugo and Git Logos](https://static.stj.io/img/lnl-docs-hugo-git-logo.png)
+![Hugo and Git Logos](http://static.stj.io/img/lnl-docs-hugo-git-logo.png)
 
 Note:
 Here comes the git.
@@ -46,7 +46,7 @@ Here comes the git.
 
 #### Fork the repository
 
-![Github Fork Button](https://static.stj.io/img/lnl-docs-fork.png)
+![Github Fork Button](http://static.stj.io/img/lnl-docs-fork.png)
 
 +++
 
@@ -309,7 +309,7 @@ $ hugo server
 
 ### Small Fixes and Typos
 
-![Docs Header Edit Link](https://static.stj.io/img/lnl-docs-edit-link.png)
+![Docs Header Edit Link](http://static.stj.io/img/lnl-docs-edit-link.png)
 
 ---
 
