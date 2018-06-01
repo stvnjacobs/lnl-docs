@@ -399,7 +399,7 @@ It test for thing such as:
 - Python 3
 - Once of Virtualenv, Pipenv, etc. (recommended)
 
-```
+```txt
 $ cd ci/
 
 $ virtualenv -p python3 .env
