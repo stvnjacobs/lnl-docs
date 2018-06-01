@@ -9,7 +9,7 @@ https://linode.com/docs/
 
 ## Overview
 
-The Linode Docs currently store over **1000** articles.
+The Linode Docs currently contain over **1000** articles.
 
 _(1027 at the time of me writing this.)_
 
@@ -258,7 +258,7 @@ https://raw.githubusercontent.com/linode/docs/master/docs/getting-started/index.
 
 Note:
 Not pictured
-- Front matter is seperated by `---`
+- Front matter is separated by `---`
 
 ---
 
@@ -301,7 +301,7 @@ There are many reasons to fix a guide:
 
 For larger changes, it is best to open an issue on the GitHub project.
 
-You can still make the changes, but it is best to reach a concensus with the Docs team before putting in the effort to rewrite a large portion of a doc.
+You can still make the changes, but it is best to reach a consensus with the Docs team before putting in the effort to rewrite a large portion of a doc.
 
 https://github.com/linode/docs/issues
 
@@ -325,7 +325,7 @@ https://github.com/linode/docs/blob/master/CONTRIBUTING.md#create-a-new-guide
 
 ## ci/
 
-The Linode Docs have a test suite that is run as part of a continuous integration pipeleine.
+The Linode Docs have a test suite that is run as part of a continuous integration pipeline.
 It test for thing such as:
 - Presence of required metadata
 - File naming and formatting conventions
@@ -359,7 +359,7 @@ $ pip install -r requirements.txt
 
 We need two terminals open, so open up a second.
 
-Navigate to the root of the docs directory in both temrinals.
+Navigate to the root of the docs directory in both terminals.
 
 #### Terminal one
 
