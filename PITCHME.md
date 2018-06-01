@@ -143,9 +143,9 @@ the `git pull upstream master` should return `Already up to date.`
 @[10]
 @[11]
 
-+++
+---
 
-### docs/
+## docs/
 
 - Contains all the content files used to compose our documentation.
 
@@ -154,17 +154,66 @@ If you are creating a new doc, or editing an existing one, this is where you wil
 Note:
 Open the GitHub link and show the docs folder
 
+https://github.com/linode/docs/tree/master/docs
+
+https://github.com/linode/docs/blob/master/docs/applications/big-data/big-data-in-the-linode-cloud-streaming-data-processing-with-apache-storm.md
+
+https://linode.com/docs/applications/big-data/big-data-in-the-linode-cloud-streaming-data-processing-with-apache-storm/
+
 We are jumping to archetypes, and skipping CI.
 We have to write a post first.
 
-+++
+---
 
-### archetypes/
+## archetypes/
 
 Hugo has what they call archetypes.
 
+They are pre-formatted "templates" for various kinds of posts.
+
 Note:
+We only write docs, so there isn't much variation, here.
+
+What it gives us, though, is uniformity.
+
+It also let's us set a standard for what metadata is required for new docs.
+
 Show the frontmatter
+
+https://github.com/linode/docs/tree/master/archetypes
+
++++
+
+### Frontmatter
+
+```
+---
+author:
+    name: Karthik Shiraly
+    email: docs@linode.com
+description: 'Deploy Storm cluster on Linode cloud for real-time analytics on streaming datasets.'
+keywords: ["storm", "analytics", "big data", "zookeeper"]
+license: '[CC BY-ND 4.0](http://creativecommons.org/licenses/by-nd/4.0/)'
+published: 2016-10-25
+modified: 2017-06-21
+modified_by:
+    name: Phil Zona
+title: 'Big Data in the Linode Cloud: Streaming Data Processing with Apache Storm'
+contributor:
+    name: Karthik Shiraly
+    link: https://github.com/pathbreak
+external_resources:
+- '[Apache Storm project website](http://storm.apache.org/)'
+- '[Apache Storm documentation](https://storm.apache.org/releases/current/index.html)'
+- '[Storm - Distributed and Fault-Tolerant Real-time Computation](http://www.infoq.com/presentations/Storm-Introduction)'
+image: https://www.linode.com/docs/assets/big_data_linode_cloud.png
+---
+```
+
+@[1,21] Seperated by `---`
+@[2-4] Author data
+@[3] A short description
+@[1-21]
 
 ---
 
