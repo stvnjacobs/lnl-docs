@@ -48,6 +48,8 @@ Here comes the git.
 
 ![Github Fork Button](http://static.stj.io/img/lnl-docs-fork.png)
 
+https://github.com/Linode/docs
+
 +++
 
 ### Step 2
@@ -166,7 +168,6 @@ $ git branch -a
 ├── netlify.toml
 ├── docs/
 ├── CONTRIBUTING.md
-├── content -> docs
 ├── config.toml
 ├── CODE_OF_CONDUCT.md
 ├── ci/
@@ -177,9 +178,9 @@ $ git branch -a
 └── .git/
 ```
 
-@[5,7]
-@[10]
+@[5]
 @[11]
+@[10]
 
 ---
 
@@ -194,7 +195,7 @@ Open the GitHub link and show the docs folder
 
 https://github.com/linode/docs/tree/master/docs
 
-https://github.com/linode/docs/blob/master/docs/getting-started.md
+https://github.com/linode/docs/blob/master/docs/getting-started/index.md
 
 https://linode.com/docs/getting-started/
 
@@ -225,6 +226,16 @@ It also let's us set a standard for what metadata is required for new docs.
 Show the frontmatter
 
 https://github.com/linode/docs/tree/master/archetypes
+
+---
+
+## The format of a doc
+
+- Frontmatter
+  - YAML
+- Body content
+  - Markdown
+  - Shortcodes
 
 +++
 
@@ -259,6 +270,34 @@ https://raw.githubusercontent.com/linode/docs/master/docs/getting-started/index.
 Note:
 Not pictured
 - Front matter is separated by `---`
+
++++
+
+### Body
+
+Hugo, and therefore the Linode Docs, are rendered from Markdown.
+
+- https://daringfireball.net/projects/markdown/
+- https://daringfireball.net/projects/markdown/syntax
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+- https://github.com/russross/blackfriday
+
++++
+
+### Shortcodes
+
+Hugo allows for templating of Markdown documents.
+
+One example, used throughout our documentation, are Shortcodes.
+
+- https://gohugo.io/content-management/shortcodes/#example-highlight-input
+- https://github.com/linode/docs/tree/master/themes/docsmith/layouts/shortcodes
+
+Examples:
+
+- https://github.com/linode/docs/blob/master/themes/docsmith/layouts/shortcodes/output.html
+- https://github.com/linode/docs/blob/master/themes/docsmith/layouts/shortcodes/note.html
+- https://github.com/linode/docs/blob/master/themes/docsmith/layouts/shortcodes/file.html
 
 ---
 
