@@ -216,9 +216,9 @@ external_resources:
 image: https://www.linode.com/docs/assets/big_data_linode_cloud.png
 ```
 
-@[2-4](Author data)
-@[3](A short description)
-@[1-21]
+@[1-3](Author data)
+@[4](A short description)
+@[1-19]
 
 Note:
 Not pictured
