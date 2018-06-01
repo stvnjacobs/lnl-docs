@@ -126,6 +126,36 @@ Note:
 Unless someone made a change in the last few minutes, since you configured the remote,
 the `git pull upstream master` should return `Already up to date.`
 
++++
+
+```txt
+$ git branch
+* master
+
+$ git fetch upstream
+
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/config/smart-fractions
+  remotes/origin/fix/postgres-pgadmin-link
+  remotes/origin/master
+  remotes/upstream/cwlinode-patch-1
+  remotes/upstream/freebsd_minecraft
+  remotes/upstream/install-nginx-ubuntu
+  remotes/upstream/master
+  remotes/upstream/migrate
+  remotes/upstream/nginx-basic-graphic
+```
+
+@[1]
+@[2]
+@[4]
+@[6]
+@[7]
+@[8-11]
+@[12-17]
+
 ---
 
 ## Project Layout
@@ -229,46 +259,6 @@ https://raw.githubusercontent.com/linode/docs/master/docs/applications/big-data/
 Note:
 Not pictured
 - Front matter is seperated by `---`
----
-
-## ci/
-
-The Linode Docs have a test suite that is run as part of a continuous integration pipeleine.
-It test for thing such as:
-- Presence of required metadata
-- File naming and formatting conventions
-- Ensuring there are no broken links
-- Ensuring there all linked images are present
-
-+++
-
-```txt
-$ git branch
-* master
-
-$ git fetch upstream
-
-$ git branch -a
-* master
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/config/smart-fractions
-  remotes/origin/fix/postgres-pgadmin-link
-  remotes/origin/master
-  remotes/upstream/cwlinode-patch-1
-  remotes/upstream/freebsd_minecraft
-  remotes/upstream/install-nginx-ubuntu
-  remotes/upstream/master
-  remotes/upstream/migrate
-  remotes/upstream/nginx-basic-graphic
-```
-
-@[1]
-@[2]
-@[4]
-@[6]
-@[7]
-@[8-11]
-@[12-17]
 
 ---
 
@@ -280,10 +270,13 @@ $ brew install hugo
 
 [Installation docs](https://gohugo.io/getting-started/installing)
 
+---
+
 ## Start the Local Development Environment
 
 ```txt
-$ cd docs
+$ cd docs/
+
 $ hugo server
 ```
 
@@ -327,3 +320,15 @@ archetypes/
 ```
 
 https://github.com/linode/docs/blob/master/CONTRIBUTING.md#create-a-new-guide
+
+---
+
+## ci/
+
+The Linode Docs have a test suite that is run as part of a continuous integration pipeleine.
+It test for thing such as:
+- Presence of required metadata
+- File naming and formatting conventions
+- Ensuring there are no broken links
+- Ensuring there all linked images are present
+
