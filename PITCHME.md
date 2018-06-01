@@ -363,17 +363,14 @@ Navigate to the root of the docs directory in both temrinals.
 
 #### Terminal one
 
-```
+```txt
 $ hugo server
 ```
 
 #### Terminal two
 
-```
+```txt
 $ ./ci/scripts/blueberry.sh
 $ ./ci/scripts/docs404.sh
 $ ./ci/scripts/vale.sh
 ```
-@[2]
-@[3]
-@[4]
