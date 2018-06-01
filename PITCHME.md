@@ -9,7 +9,9 @@ https://linode.com/docs/
 
 ## Overview
 
-The Linode Docs currently have a total of **1011** articles at the time of me writing this.
+The Linode Docs currently store over **1000** articles.
+
+_(1027 at the time of me writing this.)_
 
 The topics covered include:
 - The Linode platform
@@ -205,7 +207,7 @@ We have to write a post first.
 
 Hugo has what they call archetypes.
 
-They are pre-formatted "templates" for various kinds of posts.
+They are pre-formatted templates for various kinds of posts.
 
 ```txt
 archetypes/
@@ -248,10 +250,11 @@ icon: "book"
 show_on_rss_feed: false
 ```
 
-https://raw.githubusercontent.com/linode/docs/master/docs/applications/big-data/big-data-in-the-linode-cloud-streaming-data-processing-with-apache-storm.md
-
 @[1-3](Author data)
 @[4](A short description)
+
+https://raw.githubusercontent.com/linode/docs/master/docs/getting-started/index.md
+
 
 Note:
 Not pictured
