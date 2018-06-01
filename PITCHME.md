@@ -65,7 +65,7 @@ Resolving deltas: 100% (29522/29522), done.
 Checking out files: 100% (3355/3355), done.
 ```
 
-@[1]
+@[1](`git clone https://github.com/stvnjacobs/docs`)
 
 +++
 
@@ -310,7 +310,7 @@ https://github.com/linode/docs/issues
 ## Creating a New Post
 
 ```txt
-hugo new --kind content path/to/a-great-new-guide.md
+$ hugo new --kind content troubleshooting/troubleshooting-failing-ssh-connections/index.md
 ```
 
 ```txt
@@ -332,3 +332,45 @@ It test for thing such as:
 - Ensuring there are no broken links
 - Ensuring there all linked images are present
 
++++
+
+### System requirements
+
+- Python 3
+- Once of Virtualenv, Pipenv, etc. (recommended)
+
+```
+$ cd ci/
+
+$ virtualenv -p python3 .env
+$ source .env/bin/activate
+
+$ pip install -r requirements.txt
+```
+
+@[1]
+@[3-4](Optional, but recommended)
+@[6]
+
+
++++
+
+### Setting it up
+
+We need two terminals open, so open up a second.
+
+Navigate to the root of the docs directory in both temrinals.
+
+#### Terminal one
+
+```
+$ hugo server
+```
+
+#### Terminal two
+
+```
+$ ./ci/scripts/blueberry.sh
+$ ./ci/scripts/docs404.sh
+$ ./ci/scripts/vale.sh
+```
