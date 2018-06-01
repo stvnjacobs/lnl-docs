@@ -7,17 +7,39 @@ https://linode.com/docs/
 
 ---
 
-The Linode Docs currently have a total of **1011** articles at the time of me writing this.
+The Linode Docs currently have a total of
+
+  **1011**
+
+articles at the time of me writing this.
 
 The topics covered include:
 - The Linode platform
 - Software targeted at Linux servers
 - Deployment tools
-- and more!
+
+Note:
+and more
 
 ---
 
-## Maintaining your own version
+## Ways to contribute
+
+_from easiest to hardest_
+
+- Correct typos and silly mistakes
+- Update existing docs with better alternatives
+- Write a doc yourself!
+
+---
+
+## Getting everything in order
+
+- The Linode Docs are incredibly easy to get up and running yourself
+
+_Warning: There is going to be some git._
+
++++
 
 ### Step 1
 
@@ -58,7 +80,28 @@ $ cd docs/
 $ git remote add upstream git@github.com:Linode/docs.git
 ```
 
-You can confirm this with the following:
+Note:
+Git is set up to be a distributed system.
+
+GitHub just happens to be the "main source of truth" for Linode's docs repo.
+
+By forking the repository, you have created your own copy, hosted on GitHub.
+
+By cloning your fork, you are replicating that copy to your local computer.
+
+But to make changes to our docs, all changes will need go through the Linode/docs repository.
+
+By adding a "remote", we are letting git know that there is another copy of the repository.
+
+We can pull in any changes that are made this repository.
+
+Upstreap is only a convention.
+
++++
+
+### Confirmation
+
+You can confirm that `Linode/docs` has been linked with the following:
 
 ```txt
 $ git remote -v
@@ -70,35 +113,9 @@ upstream	git@github.com:Linode/docs.git (push)
 $ git pull upstream master
 ```
 
-+++
-
-```txt
-$ git branch
-* master
-
-$ git fetch upstream
-
-$ git branch -a
-* master
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/config/smart-fractions
-  remotes/origin/fix/postgres-pgadmin-link
-  remotes/origin/master
-  remotes/upstream/cwlinode-patch-1
-  remotes/upstream/freebsd_minecraft
-  remotes/upstream/install-nginx-ubuntu
-  remotes/upstream/master
-  remotes/upstream/migrate
-  remotes/upstream/nginx-basic-graphic
-```
-
-@[1]
-@[2]
-@[4]
-@[6]
-@[7]
-@[8-11]
-@[12-17]
+Note:
+Unless someone made a change in the last few minutes, since you configured the remote,
+the `git pull upstream master` should return `Already up to date.`
 
 ---
 
@@ -130,14 +147,28 @@ $ git branch -a
 
 If you are creating a new doc, or editing an existing one, this is where you will be working from.
 
+Note:
+Open the GitHub link and show the docs folder
+
 +++
 
 ### archetypes/
 
 Hugo has what they call archetypes.
 
+Note:
+Show the frontmatter
 
-+++
+---
+
+## Post Layout
+
+A post is laid out into two main parts.
+
+- Front matter (meta infomration)
+- Content
+
+---
 
 ### ci/
 
@@ -147,6 +178,35 @@ It test for thing such as:
 - File naming and formatting conventions
 - Ensuring there are no broken links
 - Ensuring there all linked images are present
+
+
+```txt
+$ git branch
+* master
+
+$ git fetch upstream
+
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/config/smart-fractions
+  remotes/origin/fix/postgres-pgadmin-link
+  remotes/origin/master
+  remotes/upstream/cwlinode-patch-1
+  remotes/upstream/freebsd_minecraft
+  remotes/upstream/install-nginx-ubuntu
+  remotes/upstream/master
+  remotes/upstream/migrate
+  remotes/upstream/nginx-basic-graphic
+```
+
+@[1]
+@[2]
+@[4]
+@[6]
+@[7]
+@[8-11]
+@[12-17]
 
 ---
 
